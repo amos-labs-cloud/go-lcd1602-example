@@ -29,5 +29,4 @@ func main() {
 	syncedLCD.WriteLines()
 	log.Println("Writing multiple lines")
 	syncedLCD.WriteLines("This is a ", "test of the lcd")
-
 }
