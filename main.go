@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/pimvanhespen/go-pi-lcd1602"
 	"github.com/pimvanhespen/go-pi-lcd1602/synchronized"
+	"time"
 )
 
 func main() {
@@ -12,4 +13,7 @@ func main() {
 	defer syncedLCD.Close()
 
 	syncedLCD.WriteLines("Hello world!")
+	time.Sleep(time.Second * 5)
+	syncedLCD.WriteLines("")
+	syncedLCD.Write("from Amos Labs")
 }
