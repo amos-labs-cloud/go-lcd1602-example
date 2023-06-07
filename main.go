@@ -24,4 +24,9 @@ func main() {
 	syncedLCD.WriteLines()
 	log.Println("Writing another message")
 	syncedLCD.WriteLines("from Amos Labs")
+	log.Println("Resetting the screen")
+	syncedLCD.WriteLines()
+	log.Println("Writing multiple lines")
+	syncedLCD.WriteLines("This is a ", "test of the lcd")
+
 }
