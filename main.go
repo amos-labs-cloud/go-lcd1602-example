@@ -15,5 +15,5 @@ func main() {
 	syncedLCD.WriteLines("Hello world!")
 	time.Sleep(time.Second * 5)
 	syncedLCD.WriteLines("")
-	syncedLCD.Write("from Amos Labs")
+	syncedLCD.WriteLines("from Amos Labs")
 }
