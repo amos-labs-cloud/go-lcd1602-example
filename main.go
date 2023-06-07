@@ -1,4 +1,4 @@
-package go_lcd1602_example
+package main
 
 import (
 	"github.com/pimvanhespen/go-pi-lcd1602"
