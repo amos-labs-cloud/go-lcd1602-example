@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	lcdi := lcd1602.New(18, 23, []int{24, 25, 12, 16}, 16)
+	lcdi := lcd1602.New(18, 23, []int{16, 12, 25, 24}, 16)
 	syncedLCD := synchronized.NewSynchronizedLCD(lcdi)
 	syncedLCD.Initialize()
 	defer syncedLCD.Close()
